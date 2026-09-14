@@ -1,68 +1,117 @@
-# Track Fix - Product Requirements
+# Track Fix — Product Requirements
 
 ## Product
 
-Track Fix is a frontend application for tracking bugs and issues during software development.
+Track Fix is a frontend application for tracking software bugs and development issues.
 
 This repository contains the frontend application only.
 
 ## Goal
 
-Build a clean and practical bug tracking interface while practicing
-AI-agent-assisted frontend development.
+The goal of Track Fix is to build a practical issue tracking interface while practicing an AI-agent-assisted frontend development workflow.
 
-## Current Phase
+The project should demonstrate:
 
-The project is currently frontend-only.
+- Frontend architecture
+- React and Next.js development
+- TypeScript
+- Responsive UI
+- Automated testing
+- Pull-request-based development
+- Continuous Integration
+- AI-agent-assisted software development
 
-Backend APIs, database persistence, and real authentication will be implemented separately in a future backend project.
+## Current Development Phase
+
+The current phase is frontend-only.
+
+The backend will be implemented separately in a future project.
+
+During this phase:
+
+- Use mock data.
+- Do not connect to a real backend.
+- Do not create a database.
+- Do not implement real authentication.
+- Keep data access replaceable so real APIs can be connected later.
 
 ## MVP Features
 
 ### Dashboard
 
-- Display issue statistics
-- Display issue status overview
-- Display recent issues
+Display:
+
+- Total issues
+- Open issues
+- In-progress issues
+- Completed issues
+- Recent issues
 
 ### Projects
 
-- View project list
-- View project details
+Users should be able to interact with:
+
+- Project list
+- Project detail
 - Create project UI
 - Edit project UI
 
 ### Issues
 
-Each issue contains:
+An issue contains:
 
+- ID
 - Title
 - Description
 - Status
 - Priority
 - Created time
+- Updated time
 
-Users can:
+Users should be able to:
 
-- Create issue
-- Edit issue
-- Delete issue
-- View issue details
+- View issues
+- Create an issue
+- Edit an issue
+- Delete an issue
+- View issue detail
 
-### Board
-
-Issue statuses:
+### Issue Status
 
 - Todo
 - In Progress
 - Done
 
-### Filter
+### Priority
 
-Users can filter issues by:
+- Low
+- Medium
+- High
+
+### Board
+
+Provide a Kanban-style board:
+
+- Todo
+- In Progress
+- Done
+
+### Search and Filter
+
+Support filtering by:
 
 - Status
 - Priority
+
+Search should support issue title when implemented.
+
+### Responsive Design
+
+The primary workflows should support:
+
+- Desktop
+- Tablet
+- Mobile
 
 ## Out of Scope
 
@@ -71,6 +120,8 @@ The frontend MVP does not include:
 - Backend APIs
 - Database
 - Real authentication
-- Team collaboration
+- Teams
+- Comments
 - Notifications
-- AI features
+- GitHub integration
+- AI product features
